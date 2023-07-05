@@ -3,6 +3,7 @@ package com.tliasweb.controller;
 import com.tliasweb.pojo.Dept;
 import com.tliasweb.pojo.Result;
 import com.tliasweb.service.DeptService;
+import com.tliasweb.service.impl.DeptServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +26,7 @@ public class DeptController {
     //private static Logger log = LoggerFactory.getLogger(DeptController.class);
 
     @Autowired
-    private DeptService deptService;
+    private DeptServiceImpl deptService;
 
     @GetMapping("/depts")
     public Result list()  {
