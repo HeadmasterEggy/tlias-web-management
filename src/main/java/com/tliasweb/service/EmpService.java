@@ -1,2 +1,4 @@
-package com.tliasweb.service;public class EmpService {
+package com.tliasweb.service;
+
+public interface EmpService {
 }

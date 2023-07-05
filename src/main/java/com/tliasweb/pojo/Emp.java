@@ -1,2 +1,4 @@
-package com.tliasweb.pojo;public class Emp {
+package com.tliasweb.pojo;
+
+public class Emp {
 }

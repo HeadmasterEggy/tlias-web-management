@@ -1,2 +1,10 @@
-package com.tliasweb.service.impl;public class DeptServiceImpl {
+package com.tliasweb.service.impl;
+
+import com.tliasweb.service.DeptService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+
+@Slf4j
+@Service
+public class DeptServiceImpl implements DeptService {
 }

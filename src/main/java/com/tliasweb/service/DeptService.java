@@ -1,2 +1,4 @@
-package com.tliasweb.service.impl;public interface DeptService {
+package com.tliasweb.service;
+
+public interface DeptService {
 }
