@@ -8,10 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,13 +25,34 @@ public class DeptController {
     @Autowired
     private DeptServiceImpl deptService;
 
+    /**
+     * 查询部门数据
+     * @return
+     */
     @GetMapping("/depts")
     public Result list()  {
+
         log.info("查询全部部门数据");
 
         //调用service查询部门数据
         List<Dept> deptList = deptService.list();
 
         return Result.success(deptList);
+    }
+
+    /**
+     * 删除部门
+     * @param id
+     * @return
+     */
+    @DeleteMapping("/depts/{id}")
+    public Result delete(@PathVariable Integer id) {
+
+        log.info("根据id删除部门:{}", id);
+
+        //调用service删除部门
+        deptService.delete(id);
+
+        return Result.success();
     }
 }
