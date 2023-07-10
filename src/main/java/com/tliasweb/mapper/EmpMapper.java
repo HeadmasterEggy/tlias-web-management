@@ -1,9 +1,8 @@
 package com.tliasweb.mapper;
 
 import com.tliasweb.pojo.Emp;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-
 import java.time.LocalDate;
 import java.util.List;
 
@@ -43,4 +42,12 @@ public interface EmpMapper {
      * @param ids
      */
     void delete(List<Integer> ids);
+
+    /**
+     * 新增员工
+     * @param emp
+     */
+    @Insert("insert into emp(username, name, gender, image, job, entrydate, dept_id, create_time, update_time) " +
+            " values(#{username}, #{name}, #{gender}, #{image}, #{job}, #{entrydate}, #{deptId}, #{createTime}, #{updateTime})")
+    void insert(Emp emp);
 }

@@ -1,5 +1,6 @@
 package com.tliasweb.controller;
 
+import com.tliasweb.pojo.Emp;
 import com.tliasweb.pojo.PageBean;
 import com.tliasweb.pojo.Result;
 import com.tliasweb.service.EmpService;
@@ -16,7 +17,7 @@ import java.util.List;
  */
 @Slf4j
 @RestController
-@RequestMapping("/emps/")
+@RequestMapping("/emps")
 public class EmpController {
 
     @Autowired
@@ -41,5 +42,12 @@ public class EmpController {
         empService.delete(ids);
         return Result.success();
 
+    }
+
+    @PostMapping
+    public Result save(@RequestBody Emp emp){
+        log.info("新增员工, emp: {}", emp);
+        empService.save(emp);
+        return Result.success();
     }
 }
