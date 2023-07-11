@@ -2,6 +2,7 @@ package com.tliasweb.service;
 
 import com.tliasweb.pojo.Emp;
 import com.tliasweb.pojo.PageBean;
+import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -26,4 +27,11 @@ public interface EmpService {
      * @param emp
      */
     void save(Emp emp);
+
+    /**
+     * 根据ID查询员工
+     * @param id
+     * @return
+     */
+    Emp getById(Integer id);
 }
