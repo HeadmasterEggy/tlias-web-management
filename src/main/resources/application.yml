@@ -15,3 +15,10 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
+#阿里云OSS
+aliyun:
+  oss:
+    endpoint: https://oss-cn-hangzhou.aliyuncs.com
+    accessKeyId: LTAI5tAkDqcf4VuoMxpbvGAb
+    accessKeySecret: vZVQ9vLhFqdENQlvsXj5j9ycGmScpV
+    bucketName: web-joey-tlias
