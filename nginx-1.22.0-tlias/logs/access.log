@@ -346,3 +346,7 @@
 127.0.0.1 - - [16/Jul/2023:12:52:17 +0800] "GET /api/depts HTTP/1.1" 200 537 "http://localhost:90/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
 127.0.0.1 - - [16/Jul/2023:12:52:46 +0800] "POST /api/depts HTTP/1.1" 200 85 "http://localhost:90/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
 127.0.0.1 - - [16/Jul/2023:12:54:10 +0800] "POST /api/depts HTTP/1.1" 200 85 "http://localhost:90/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+127.0.0.1 - - [16/Jul/2023:13:09:44 +0800] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+127.0.0.1 - - [16/Jul/2023:13:09:45 +0800] "GET /api/depts HTTP/1.1" 200 537 "http://localhost:90/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+127.0.0.1 - - [16/Jul/2023:13:10:08 +0800] "DELETE /api/depts/3 HTTP/1.1" 200 49 "http://localhost:90/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+127.0.0.1 - - [16/Jul/2023:13:10:08 +0800] "GET /api/depts HTTP/1.1" 200 439 "http://localhost:90/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"

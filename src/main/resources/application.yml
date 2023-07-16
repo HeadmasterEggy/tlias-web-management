@@ -19,6 +19,6 @@ mybatis:
 aliyun:
   oss:
     endpoint: https://oss-cn-hangzhou.aliyuncs.com
-    accessKeyId: LTAI5tAkDqcf4VuoMxpbvGAb
-    accessKeySecret: vZVQ9vLhFqdENQlvsXj5j9ycGmScpV
+    accessKeyId:
+    accessKeySecret:
     bucketName: web-joey-tlias
