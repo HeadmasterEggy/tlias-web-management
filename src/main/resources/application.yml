@@ -19,6 +19,10 @@ mybatis:
 aliyun:
   oss:
     endpoint: https://oss-cn-hangzhou.aliyuncs.com
-    accessKeyId:
-    accessKeySecret:
+    accessKeyId: LTAI5tAkDqcf4VuoMxpbvGAb
+    accessKeySecret: vZVQ9vLhFqdENQlvsXj5j9ycGmScpV
     bucketName: web-joey-tlias
+#spring事务管理日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
